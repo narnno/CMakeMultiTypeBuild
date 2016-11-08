@@ -5,6 +5,9 @@
 #include "types.h" 
 #include "apptest1.h"
 
+//Lib1test
+#include "libtest1.h"
+
 #define MAX_NUMBER_BUILDING 3
 int main (void)
 {
@@ -21,6 +24,9 @@ int main (void)
   	printf("Building (%u):{%u,%u} \r\n",size,pBuildPtr->b1NbFloor, pBuildPtr->b1NbElevator);
   	pBuildPtr++;
   }
+
+  libtest1();
+  
   return 0;
 
 }

@@ -1,7 +1,4 @@
 
-cmake_minimum_required (VERSION 2.6)
-project (Apptest1)
-
 #Executable version
 set (APPTEST1_VERSION_MAJOR 1)
 set (APPTEST1_VERSION_MINOR 0)
@@ -26,3 +23,4 @@ configure_file (${PROJECT_INCLUDE_DIR}/appconfig.h.in ${PROJECT_INCLUDE_DIR}/app
 include_directories(${PROJECT_INCLUDE_DIR})
 
 add_executable(apptest1 ${PROJECT_SOURCE_DIR}/apptest1.c)
+target_link_libraries(apptest1 libtest1)
